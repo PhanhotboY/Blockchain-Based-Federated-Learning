@@ -1,0 +1,24 @@
+{
+  "name": "blockchain-based-federated-learning",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "start": "remix-serve ./build/server/index.js",
+    "hardhat:deploy": "npx hardhat compile && npx hardhat deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@typechain/hardhat": "^9.1.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.22.13",
+    "prettier-plugin-solidity": "^1.4.1"
+  }
+}

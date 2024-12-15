@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  node:
+    build: .
+    container_name: local_node
+    ports:
+      - '8545:8545'
+    volumes:
+      - .:/app
+    networks:
+      - app_network
+
+  mdb:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: superbstrongpassword
+    ports:
+      - 27018:27017
+    networks:
+      - app_network
+
+  # app:
+  #   image: your_app_image:latest
+  #   container_name: app_container
+  #   ports:
+  #     - '8080:8080'
+  #   environment:
+  #     - ENV_VAR=your_value
+  #   volumes:
+  #     - ./app:/app
+  #   networks:
+  #     - app_network
+
+networks:
+  app_network:
+    driver: bridge

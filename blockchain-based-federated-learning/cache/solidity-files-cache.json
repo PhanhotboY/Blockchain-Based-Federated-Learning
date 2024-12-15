@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/phanhotboy/workspace/bbfl/blockchain-based-federated-learning/contracts/BBFLModel.sol": {
+      "lastModificationDate": 1731940523073,
+      "contentHash": "98adbc697b88614ff86b641a8ef1f928",
+      "sourceName": "contracts/BBFLModel.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.28"
+      ],
+      "artifacts": [
+        "BBFLModel"
+      ]
+    }
+  }
+}
